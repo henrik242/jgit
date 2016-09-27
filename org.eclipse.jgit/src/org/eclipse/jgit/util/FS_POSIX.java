@@ -187,29 +187,7 @@ public class FS_POSIX extends FS {
 	public boolean setExecute(File f, boolean canExecute) {
 		if (!isFile(f))
 			return false;
-		if (!canExecute)
-			return f.setExecutable(false);
-
-		try {
-			Path path = f.toPath();
-			Set<PosixFilePermission> pset = Files.getPosixFilePermissions(path);
-
-			// owner (user) is always allowed to execute.
-			pset.add(PosixFilePermission.OWNER_EXECUTE);
-
-			int mask = umask();
-			apply(pset, mask, PosixFilePermission.GROUP_EXECUTE, 1 << 3);
-			apply(pset, mask, PosixFilePermission.OTHERS_EXECUTE, 1);
-			Files.setPosixFilePermissions(path, pset);
-			return true;
-		} catch (IOException e) {
-			// The interface doesn't allow to throw IOException
-			final boolean debug = Boolean.parseBoolean(SystemReader
-					.getInstance().getProperty("jgit.fs.debug")); //$NON-NLS-1$
-			if (debug)
-				System.err.println(e);
-			return false;
-		}
+		return f.setExecutable(canExecute);
 	}
 
 	private static void apply(Set<PosixFilePermission> set,
@@ -295,10 +273,10 @@ public class FS_POSIX extends FS {
 		if (gitdir == null) {
 			return null;
 		}
-		final Path hookPath = gitdir.toPath().resolve(Constants.HOOKS)
-				.resolve(hookName);
-		if (Files.isExecutable(hookPath))
-			return hookPath.toFile();
+		File newFile = new File(gitdir, Constants.HOOKS);
+		if (newFile.canExecute()) {
+			return newFile;
+		}
 		return null;
 	}
 }

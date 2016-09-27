@@ -184,10 +184,10 @@ public class FS_Win32_Cygwin extends FS_Win32 {
 		if (gitdir == null) {
 			return null;
 		}
-		final Path hookPath = gitdir.toPath().resolve(Constants.HOOKS)
-				.resolve(hookName);
-		if (Files.isExecutable(hookPath))
-			return hookPath.toFile();
+		File newFile = new File(gitdir, Constants.HOOKS);
+		if (newFile.canExecute()) {
+			return newFile;
+		}
 		return null;
 	}
 }
