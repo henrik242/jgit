@@ -383,7 +383,8 @@ public class FileUtils {
 	 */
 	public static Path createSymLink(File path, String target)
 			throws IOException {
-		throw new UnsupportedOperationException("Needs to be backported to jdk 6");
+		Runtime.getRuntime().exec("ln -s " + path.getAbsolutePath() + " " + target);
+		return null;
 	}
 
 	/**
