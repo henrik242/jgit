@@ -139,6 +139,11 @@
       <artifactId>org.eclipse.jgit.lfs.server</artifactId>
       <version>${project.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.lukhnos</groupId>
+      <artifactId>nnio</artifactId>
+    </dependency>
   </dependencies>
 
   <build>

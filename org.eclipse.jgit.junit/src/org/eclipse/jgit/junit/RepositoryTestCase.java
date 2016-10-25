@@ -55,7 +55,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.util.Map;
 
 import org.eclipse.jgit.api.Git;

@@ -55,7 +55,7 @@ import java.io.Writer;
 import java.lang.reflect.Method;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.FileUtils;

@@ -113,6 +113,12 @@
       <artifactId>httpclient</artifactId>
       <version>4.3.6</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.lukhnos</groupId>
+      <artifactId>nnio</artifactId>
+    </dependency>
+
   </dependencies>
 
   <build>

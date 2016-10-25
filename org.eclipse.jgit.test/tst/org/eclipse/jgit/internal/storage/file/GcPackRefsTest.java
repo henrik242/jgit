@@ -52,7 +52,7 @@ import static org.junit.Assert.assertSame;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CyclicBarrier;

@@ -43,7 +43,7 @@
 package org.eclipse.jgit.lfs.errors;
 
 import java.io.IOException;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.text.MessageFormat;
 
 import org.eclipse.jgit.lfs.internal.LfsText;

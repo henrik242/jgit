@@ -44,7 +44,7 @@ package org.eclipse.jgit.lfs;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 
 import org.eclipse.jgit.lfs.lib.LongObjectId;
 

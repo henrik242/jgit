@@ -48,7 +48,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.security.MessageDigest;
 
 import org.eclipse.jgit.lfs.lib.Constants;

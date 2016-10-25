@@ -95,7 +95,7 @@ public class FileUtil {
 	 * @return lastModified attribute for given path
 	 * @throws IOException
 	 * @deprecated Use
-	 *             {@link Files#getLastModifiedTime(java.nio.file.Path, java.nio.file.LinkOption...)}
+	 *             {@link Files#getLastModifiedTime(java.nio.file.Path, org.lukhnos.nnio.file.LinkOption...)}
 	 *             instead
 	 */
 	@Deprecated
@@ -120,7 +120,7 @@ public class FileUtil {
 	 * @param path
 	 * @return {@code true} if the given path exists
 	 * @deprecated Use
-	 *             {@link Files#exists(java.nio.file.Path, java.nio.file.LinkOption...)}
+	 *             {@link Files#exists(java.nio.file.Path, org.lukhnos.nnio.file.LinkOption...)}
 	 *             instead
 	 */
 	@Deprecated
@@ -165,7 +165,7 @@ public class FileUtil {
 	 * @param path
 	 * @return {@code true} if the given file a directory
 	 * @deprecated Use
-	 *             {@link Files#isDirectory(java.nio.file.Path, java.nio.file.LinkOption...)}
+	 *             {@link Files#isDirectory(java.nio.file.Path, org.lukhnos.nnio.file.LinkOption...)}
 	 *             instead
 	 */
 	@Deprecated
@@ -177,7 +177,7 @@ public class FileUtil {
 	 * @param path
 	 * @return {@code true} if the given file is a file
 	 * @deprecated Use
-	 *             {@link Files#isRegularFile(java.nio.file.Path, java.nio.file.LinkOption...)}
+	 *             {@link Files#isRegularFile(java.nio.file.Path, org.lukhnos.nnio.file.LinkOption...)}
 	 *             instead
 	 */
 	@Deprecated

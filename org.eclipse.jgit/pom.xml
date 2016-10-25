@@ -94,6 +94,11 @@
       <artifactId>javax.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
+
+      <dependency>
+          <groupId>org.lukhnos</groupId>
+          <artifactId>nnio</artifactId>
+      </dependency>
   </dependencies>
 
   <build>

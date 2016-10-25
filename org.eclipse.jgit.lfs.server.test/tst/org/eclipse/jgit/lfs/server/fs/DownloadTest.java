@@ -48,8 +48,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import org.lukhnos.nnio.file.Path;
+import org.lukhnos.nnio.file.Paths;
 import java.text.MessageFormat;
 
 import org.apache.http.client.ClientProtocolException;

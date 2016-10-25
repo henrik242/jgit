@@ -44,7 +44,7 @@ package org.eclipse.jgit.lfs.internal;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.security.DigestOutputStream;
 import java.text.MessageFormat;
 

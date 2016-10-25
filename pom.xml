@@ -639,6 +639,12 @@
         <artifactId>gson</artifactId>
         <version>${gson-version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.lukhnos</groupId>
+        <artifactId>nnio</artifactId>
+        <version>0.2</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

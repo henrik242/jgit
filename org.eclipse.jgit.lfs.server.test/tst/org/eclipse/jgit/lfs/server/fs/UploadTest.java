@@ -48,8 +48,8 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import org.lukhnos.nnio.file.Path;
+import org.lukhnos.nnio.file.Paths;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;

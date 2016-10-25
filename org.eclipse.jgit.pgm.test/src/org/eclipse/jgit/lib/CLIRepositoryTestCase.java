@@ -46,7 +46,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
+import org.lukhnos.nnio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
